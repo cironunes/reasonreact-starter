@@ -1,0 +1,33 @@
+{
+  "name": "reasonreact-starter",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w -ws _ ",
+    "clean": "bsb -clean-world",
+    "server": "moduleserve --spa ./ --port 8000",
+    "test:ci": "jest",
+    "test": "jest --watchAll"
+  },
+  "keywords": [
+    "BuckleScript",
+    "ReasonReact",
+    "reason-react"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bs-css": "12.2.0",
+    "bs-css-emotion": "1.2.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "reason-react": "0.8.0"
+  },
+  "devDependencies": {
+    "@glennsl/bs-jest": "0.5.1",
+    "bs-platform": "7.2.2",
+    "bs-react-testing-library": "0.7.2",
+    "moduleserve": "0.9.1"
+  }
+}
