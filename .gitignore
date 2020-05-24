@@ -4,4 +4,5 @@
 npm-debug.log
 /lib/bs/
 /node_modules/
-/bundleOutput/
+.cache
+dist

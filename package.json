@@ -3,10 +3,11 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
-    "build": "bsb -make-world",
-    "start": "bsb -make-world -w -ws _ ",
-    "clean": "bsb -clean-world",
-    "server": "moduleserve --spa ./ --port 8000",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "bsb:build": "bsb -make-world",
+    "bsb:build:watch": "bsb -make-world -w -ws _ ",
+    "bsb:clean": "bsb -clean-world",
     "test:ci": "jest",
     "test": "jest --watchAll"
   },
@@ -28,6 +29,7 @@
     "@glennsl/bs-jest": "0.5.1",
     "bs-platform": "7.2.2",
     "bs-react-testing-library": "0.7.2",
-    "moduleserve": "0.9.1"
+    "bsb-js": "^1.1.7",
+    "parcel-bundler": "^1.12.4"
   }
 }
